@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root
+{
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right top, #11a9c9, #219ae3, #857ee2, #cc50b6, #eb1267);
+}
+
+#container
+{
+  border-radius: 7px;
+  width: 80vw;
+  height: 80vh;
+  background: rgb(241, 241, 241);
+  position: absolute;
+  top: 49%;
+  transform: translateY(-50%);
+  left: 10%;
+}
+
+#upload,#view
+{
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  left: 50%; 
+}
+
+#fakebtn
+{
+  padding: 17px;
+  background: #43c595;
+  font: 24px Arial;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  border: none;
+  margin: 10px 0px; 
+}
+
+#faketext
+{
+  color: gray;
+    font-size: 20px;
+    margin: 15px;
+}
+
+#btn{
+border: 2px solid #797979;
+outline: none;
+border-radius: 6px;
+padding: 9px 18px;
+font: 20px Verdana;
+color: #797979;
+display: block;
+margin: 10px auto;
+}
+
+span
+{
+ margin: 15px 0px; 
+}
+
+#view>button,#upload>button{
+  border: 2px solid #797979;
+  outline: none;
+  border-radius: 6px;
+  background: #797979;
+  font: 20px Verdana;
+  padding: 9px 18px;
+  color: aliceblue;
+  display: block;
+  margin: 15px auto;
+
+}
+
+#upload-div
+{
+  font: 20px Arial;
+  color: rgb(70, 70, 70);
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+#view-div
+{
+  overflow-y: auto;
+  height: 68vh;
+  width: 80vw;
+}
+
+#delete-btn
+{
+  font: 15px Verdana;
+  border: 2px solid rgb(199, 42, 42);
+  outline: none;
+  color: white;
+  padding: 8px 17px;
+  float:right;
+  color: rgb(199, 42, 42);
+  margin-right: 8px;
+}
+
+#download-btn{
+  font: 15px Verdana;
+  text-decoration: none;
+  border: 2px solid #11a9c9;
+  color: white;
+  padding: 8px;
+  color: #11a9c9;
+  float:right;
+}
+
+ul
+{
+  list-style: none;
+}
+
+li
+{
+  font: 20px Verdana;
+  padding: 12px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.096);
+}
+
+#view
+{
+  display: none;
+}
+
+#progress-box
+{
+  height: 5vh;
+    width: 40vw;
+    background-color: rgb(214, 219, 223);
+    border-radius: 20px;
+    display: none;
+    padding: 0px 0.5vh;
+}
+
+#progress-value
+{
+  transform: translateY(0.5vh);
+  height: 83%;
+  background: #b3b3b3;
+  border-radius: 15px;
+}
+
+#progress-percent, #success
+{
+  display: none;
+}
